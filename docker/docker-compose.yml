@@ -66,7 +66,7 @@ services:
   # mohab comment, now there is a solr8 image working with ckan 2.9
   # need to check how it will be integrated.
   solr:
-    image: ckan/solr
+    image: ckan/solr@sha256:5c4642db838b975f2c4dac105d47214b7bf3e73416a38bfe2aa490cdd87502a4
     volumes:
       - type: bind
         source: $PWD/solr/schema.xml
